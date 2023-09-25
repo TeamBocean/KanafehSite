@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/images/Kanafeh kingz logo.png"
 
 export default function Footer () {
   return (
@@ -7,8 +8,7 @@ export default function Footer () {
         <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
                 <a href="https://flowbite.com" className="flex items-center">
-                    <img src="#" className="mr-3 h-8" alt="Kanafeh-Logo" />
-                    <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">Kanafeh Kingz</span>
+                    <img src={Logo} className="mr-3 h-32" alt="Kanafeh-Logo" />
                 </a>
             </div>
 
