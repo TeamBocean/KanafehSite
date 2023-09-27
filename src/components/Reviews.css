@@ -3,6 +3,7 @@
     border-radius: 40px;
     background: linear-gradient(138deg, rgba(255, 195, 0, 0.14) 2.35%, rgba(255, 195, 0, 0.14) 100.24%);
     backdrop-filter: blur(10px);
+    border: 1px solid #000000, #FFC300, #FFC300, #FFC300
 }
 
 .container-one {
