@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
-import kanafeh from "../assets/images/classic.png";
+import nabulsi from "../assets/images/nabulsi.png";
 import baklawa from "../assets/images/baklawa.png";
+import classic from "../assets/images/classic.png"
+import pistachio from "../assets/images/pistachio.png"
 import "./Reviews.css"
 
 const Menu = () => {
   const [selectedOption, setSelectedOption] = useState("Pistachio Baklawa");
 
   const [before, setBefore] = useState(4);
+  const [current, setCurrent] = useState(0)
   const [after, setAfter] = useState(1);
 
   const handleOptionChange = (option) => {
@@ -14,7 +17,7 @@ const Menu = () => {
     arr.indexOf(selectedOption);
   };
 
-  const arr = [{name:"Pistachio Baklawa"},{name:"Classic Kanafeh"}, {name: "Pistachio Kanafeh"}, {name:"Nabulsi Kanafeh"},{name: "Basbusa"}];
+  const arr = [{name:"Pistachio Baklawa", image: baklawa},{name:"Classic Kanafeh", image: classic}, {name: "Pistachio Kanafeh", image: pistachio}, {name:"Nabulsi Kanafeh", image: nabulsi},{name: "Basbusa", image: classic}];
 
   const position = (arr, pos) => {
     let before;
@@ -42,6 +45,7 @@ const Menu = () => {
         pos = i; 
       }
     }
+    setCurrent(pos)
     position(arr,pos);
   }, [selectedOption]);
 
@@ -119,7 +123,7 @@ const Menu = () => {
           <div class="flex flex-col items-center pt-4 pb-10">
             <img
               class="w-36 h-36 mb-3 rounded-full shadow-lg"
-              src={baklawa}
+              src={arr[before].image}
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-white">
@@ -131,19 +135,19 @@ const Menu = () => {
           <div class="flex flex-col items-center px-6 py-12 ">
             <img
               class="w-36 h-36 mb-3 rounded-full shadow-lg"
-              src={kanafeh}
+              src={arr[current].image}
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-white">
-              {selectedOption}
+              {arr[current].name}
             </h5>
           </div>
         </div>
-        <div class="self-center w-full max-w-sm hadow container-one">
+        <div class="self-center w-full max-w-sm shadow container-one">
           <div class="flex flex-col items-center pt-4 pb-10">
             <img
               class="w-36 h-36 mb-3 rounded-full shadow-lg"
-              src={kanafeh}
+              src={arr[after].image}
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-white">
