@@ -50,8 +50,10 @@ const Menu = () => {
   }, [selectedOption]);
 
   return (
-    <section className="mb-20 bg-black flex flex-col mt-32">
+    <section className="mb-20 bg-black flex flex-col mt-32">#
+    <h1 className="text-3xl font-bold mb-6 text-white mx-auto">Our Menu</h1>
       <div className="flex my-10 mx-auto">
+        
         <button
           type="button"
           class={`${
