@@ -1,5 +1,6 @@
 import React from "react";
-import HeroImage from "../assets/images/KanafehHero.png"
+
+import HeroImage from "../assets/images/KanafehHero.png";
 
 export default function Hero () {
   return (
