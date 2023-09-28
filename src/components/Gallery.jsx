@@ -1,5 +1,5 @@
 import { Carousel } from 'flowbite-react';
-import KanafehGallery from "../assets/images/KanafehGallery.png";
+import KanafehGallery from "../assets/images/kanafehgallery.png";
 import KanafehHero from "../assets/images/KanafehHero.png";
 
 

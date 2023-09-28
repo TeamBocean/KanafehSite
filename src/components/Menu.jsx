@@ -160,7 +160,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="text-center mt-8">
-          <a href="https://www.just-eat.ie/restaurants-kanafeh-kingz-dublin-tallaght-tymon/menu" className="mx-auto px-8 py-2 text-black bg-orange">View Menu</a>
+          <a href="https://www.just-eat.ie/restaurants-kanafeh-kingz-dublin-tallaght-tymon/menu" className="mx-auto px-8 py-2 text-black bg-orange" target="_blank">Order Now</a>
           </div>
     </section>
   );
