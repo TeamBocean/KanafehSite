@@ -156,8 +156,12 @@ const Menu = () => {
               {arr[after].name}
             </h5>
           </div>
+          
         </div>
       </div>
+      <div className="text-center mt-8">
+          <a href="https://www.just-eat.ie/restaurants-kanafeh-kingz-dublin-tallaght-tymon/menu" className="mx-auto px-8 py-2 text-black bg-orange">View Menu</a>
+          </div>
     </section>
   );
 };
